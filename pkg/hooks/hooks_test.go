@@ -24,6 +24,7 @@ import (
 
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
 	"kubevirt.io/kubevirt/pkg/hooks"
 )
@@ -41,7 +42,9 @@ var _ = Describe("HooksAPI", func() {
 					ImagePullPolicy: "Always",
 				},
 			}
-			hookSidecarListAnnotation := `
+			vmiHookObjectMeta := metav1.ObjectMeta{
+				Annotations: map[string]string{
+					hooks.HookSidecarListAnnotationName: `
                 [
                   {
                     "image": "some-image:v1",
@@ -52,8 +55,10 @@ var _ = Describe("HooksAPI", func() {
                     "imagePullPolicy": "Always"
                   }
                 ]
-`
-			hookSidecarList, err := hooks.UnmarshalHookSidecarList(hookSidecarListAnnotation)
+`,
+				},
+			}
+			hookSidecarList, err := hooks.UnmarshalHookSidecarList(vmiHookObjectMeta)
 			Expect(err).ToNot(HaveOccurred())
 			Expect(reflect.DeepEqual(hookSidecarList, expectedHookSidecarList)).To(Equal(true))
 		})
