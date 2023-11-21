@@ -1,5 +1,5 @@
 /*
-Copyright 2022 The KubeVirt Authors.
+Copyright 2023 The KubeVirt Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -24,7 +24,6 @@ import (
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
-
 	flavorv1alpha1 "kubevirt.io/api/flavor/v1alpha1"
 	snapshotv1alpha1 "kubevirt.io/api/snapshot/v1alpha1"
 )

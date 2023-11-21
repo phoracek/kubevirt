@@ -5,7 +5,6 @@ package cmdclient
 
 import (
 	gomock "github.com/golang/mock/gomock"
-
 	v1 "kubevirt.io/api/core/v1"
 	v10 "kubevirt.io/kubevirt/pkg/handler-launcher-com/cmd/v1"
 	api "kubevirt.io/kubevirt/pkg/virt-launcher/virtwrap/api"

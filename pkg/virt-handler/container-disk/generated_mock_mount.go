@@ -4,12 +4,10 @@
 package container_disk
 
 import (
-	time "time"
-
 	gomock "github.com/golang/mock/gomock"
-
 	v1 "kubevirt.io/api/core/v1"
 	container_disk "kubevirt.io/kubevirt/pkg/container-disk"
+	time "time"
 )
 
 // Mock of Mounter interface

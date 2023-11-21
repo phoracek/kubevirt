@@ -5,7 +5,6 @@ package infraconfigurators
 
 import (
 	gomock "github.com/golang/mock/gomock"
-
 	cache "kubevirt.io/kubevirt/pkg/network/cache"
 	api "kubevirt.io/kubevirt/pkg/virt-launcher/virtwrap/api"
 )

@@ -5,9 +5,8 @@ package cli
 
 import (
 	gomock "github.com/golang/mock/gomock"
-	libvirt "libvirt.org/go/libvirt"
-
 	stats "kubevirt.io/kubevirt/pkg/virt-launcher/virtwrap/stats"
+	libvirt "libvirt.org/go/libvirt"
 )
 
 // Mock of Connection interface

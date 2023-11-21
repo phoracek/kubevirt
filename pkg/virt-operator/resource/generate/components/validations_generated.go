@@ -1,7 +1,7 @@
 package components
 
 var CRDsValidation map[string]string = map[string]string{
-	"datavolumetemplatespec": `openAPIV3Schema:
+ "datavolumetemplatespec" : `openAPIV3Schema:
   nullable: true
   properties:
     apiVersion:
@@ -457,7 +457,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"kubevirt": `openAPIV3Schema:
+ "kubevirt" : `openAPIV3Schema:
   description: KubeVirt represents the object deploying all KubeVirt resources
   properties:
     apiVersion:
@@ -2394,7 +2394,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"virtualmachine": `openAPIV3Schema:
+ "virtualmachine" : `openAPIV3Schema:
   description: VirtualMachine handles the VirtualMachines that are not running or
     are in a stopped state The VirtualMachine contains the template to create the
     VirtualMachineInstance. It also mirrors the running state of the created VirtualMachineInstance
@@ -5742,7 +5742,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"virtualmachineclusterflavor": `openAPIV3Schema:
+ "virtualmachineclusterflavor" : `openAPIV3Schema:
   description: VirtualMachineClusterFlavor is a cluster scoped version of VirtualMachineFlavor
     resource.
   properties:
@@ -5861,7 +5861,7 @@ var CRDsValidation map[string]string = map[string]string{
   - profiles
   type: object
 `,
-	"virtualmachineflavor": `openAPIV3Schema:
+ "virtualmachineflavor" : `openAPIV3Schema:
   description: VirtualMachineFlavor resource contains common VirtualMachine configuration
     that can be used by multiple VirtualMachine resources.
   properties:
@@ -5980,7 +5980,7 @@ var CRDsValidation map[string]string = map[string]string{
   - profiles
   type: object
 `,
-	"virtualmachineinstance": `openAPIV3Schema:
+ "virtualmachineinstance" : `openAPIV3Schema:
   description: VirtualMachineInstance is *the* VirtualMachineInstance Definition.
     It represents a virtual machine in the runtime environment of kubernetes.
   properties:
@@ -8655,7 +8655,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"virtualmachineinstancemigration": `openAPIV3Schema:
+ "virtualmachineinstancemigration" : `openAPIV3Schema:
   description: VirtualMachineInstanceMigration represents the object tracking a VMI's
     migration to another host in the cluster
   properties:
@@ -8715,7 +8715,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"virtualmachineinstancepreset": `openAPIV3Schema:
+ "virtualmachineinstancepreset" : `openAPIV3Schema:
   description: 'VirtualMachineInstancePreset defines a VMI spec.domain to be applied
     to all VMIs that match the provided label selector More info: https://kubevirt.io/user-guide/virtual_machines/presets/#overrides'
   properties:
@@ -9706,7 +9706,7 @@ var CRDsValidation map[string]string = map[string]string{
       type: object
   type: object
 `,
-	"virtualmachineinstancereplicaset": `openAPIV3Schema:
+ "virtualmachineinstancereplicaset" : `openAPIV3Schema:
   description: VirtualMachineInstance is *the* VirtualMachineInstance Definition.
     It represents a virtual machine in the runtime environment of kubernetes.
   properties:
@@ -12337,7 +12337,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"virtualmachinerestore": `openAPIV3Schema:
+ "virtualmachinerestore" : `openAPIV3Schema:
   description: VirtualMachineRestore defines the operation of restoring a VM
   properties:
     apiVersion:
@@ -12440,7 +12440,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"virtualmachinesnapshot": `openAPIV3Schema:
+ "virtualmachinesnapshot" : `openAPIV3Schema:
   description: VirtualMachineSnapshot defines the operation of snapshotting a VM
   properties:
     apiVersion:
@@ -12557,7 +12557,7 @@ var CRDsValidation map[string]string = map[string]string{
   - spec
   type: object
 `,
-	"virtualmachinesnapshotcontent": `openAPIV3Schema:
+ "virtualmachinesnapshotcontent" : `openAPIV3Schema:
   description: VirtualMachineSnapshotContent contains the snapshot data
   properties:
     apiVersion:
