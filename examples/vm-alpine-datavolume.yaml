@@ -20,7 +20,7 @@ spec:
         storageClassName: local
       source:
         http:
-          url: docker://registry:5000/kubevirt/alpine-container-disk-demo:devel
+          url: docker://quay.io/phoracek/alpine-container-disk-demo:dpdk
   running: false
   template:
     metadata:
