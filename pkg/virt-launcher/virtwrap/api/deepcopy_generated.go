@@ -23,6 +23,7 @@ package api
 
 import (
 	runtime "k8s.io/apimachinery/pkg/runtime"
+
 	v1beta1 "kubevirt.io/containerized-data-importer-api/pkg/apis/core/v1beta1"
 )
 

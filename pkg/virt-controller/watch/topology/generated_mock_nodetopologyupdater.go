@@ -4,8 +4,9 @@
 package topology
 
 import (
-	gomock "github.com/golang/mock/gomock"
 	time "time"
+
+	gomock "github.com/golang/mock/gomock"
 )
 
 // Mock of NodeTopologyUpdater interface

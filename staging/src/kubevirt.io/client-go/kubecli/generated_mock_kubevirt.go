@@ -4,6 +4,9 @@
 package kubecli
 
 import (
+	net "net"
+	time "time"
+
 	gomock "github.com/golang/mock/gomock"
 	v1 "github.com/openshift/client-go/security/clientset/versioned/typed/security/v1"
 	v10 "k8s.io/api/autoscaling/v1"
@@ -57,6 +60,7 @@ import (
 	v1alpha15 "k8s.io/client-go/kubernetes/typed/storage/v1alpha1"
 	v1beta115 "k8s.io/client-go/kubernetes/typed/storage/v1beta1"
 	rest "k8s.io/client-go/rest"
+
 	v117 "kubevirt.io/api/core/v1"
 	versioned "kubevirt.io/client-go/generated/containerized-data-importer/clientset/versioned"
 	versioned0 "kubevirt.io/client-go/generated/external-snapshotter/clientset/versioned"
@@ -65,8 +69,6 @@ import (
 	v1alpha17 "kubevirt.io/client-go/generated/kubevirt/clientset/versioned/typed/snapshot/v1alpha1"
 	versioned2 "kubevirt.io/client-go/generated/network-attachment-definition-client/clientset/versioned"
 	versioned3 "kubevirt.io/client-go/generated/prometheus-operator/clientset/versioned"
-	net "net"
-	time "time"
 )
 
 // Mock of KubevirtClient interface

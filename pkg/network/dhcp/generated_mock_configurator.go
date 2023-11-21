@@ -5,6 +5,7 @@ package dhcp
 
 import (
 	gomock "github.com/golang/mock/gomock"
+
 	v1 "kubevirt.io/api/core/v1"
 	cache "kubevirt.io/kubevirt/pkg/network/cache"
 )

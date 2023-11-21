@@ -4,8 +4,9 @@
 package selinux
 
 import (
-	gomock "github.com/golang/mock/gomock"
 	exec "os/exec"
+
+	gomock "github.com/golang/mock/gomock"
 )
 
 // Mock of Executor interface
